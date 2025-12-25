@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>🕹️ Runner אנרגטי — משחק דפדפן אינסופי | 📦 Repo: RunRush (RR)</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>RunRush (RR) — Endless Runner</title>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">
+        <div class="badge">RR</div>
+        <div>
+          <h1>RunRush — Endless Runner</h1>
+          <small>Version: v1.0.0 • Speed-Up • Random Obstacles</small>
+        </div>
+      </div>
+
+      <div class="hud">
+        <div class="pill">🧮 <span>Score</span> <b id="score">0</b></div>
+        <div class="pill">⚡ <span>Speed</span> <b id="speed">1.00</b></div>
+        <button class="btn primary" id="btnStart">▶️ Start</button>
+        <button class="btn danger" id="btnReset">🔁 Reset</button>
+      </div>
+    </div>
+
+    <div class="stage">
+      <canvas id="game" width="960" height="540"></canvas>
+
+      <div class="overlay" id="overlayStart">
+        <div class="panel">
+          <h2>🟢 Ready? RunRush מתחיל!</h2>
+          <p>
+            קפיצה בזמן הנכון = ניצחון 😄<br/>
+            כל שנייה שעוברת — המהירות עולה ⚡ והניקוד מזנק 🧮
+          </p>
+          <div class="kbd">
+            <span class="key">Space</span>
+            <span class="key">↑</span>
+            <span class="key">Click</span>
+            <span class="key">Tap</span>
+          </div>
+          <div class="row">
+            <button class="btn primary" id="btnStart2">🏁 Start Run</button>
+          </div>
+          <div class="tiny">טיפ: שמור קצב נשימה — קפיצה מוקדמת מדי = נחיתה על מכשול 😉</div>
+        </div>
+      </div>
+
+      <div class="overlay hide" id="overlayOver">
+        <div class="panel">
+          <h2>🔴 Game Over</h2>
+          <p>
+            ניקוד סופי: <b id="finalScore">0</b> • שיא: <b id="bestScore">0</b><br/>
+            רוצה עוד סיבוב? הפעם עם דיוק של לייזר ⚡
+          </p>
+          <div class="row">
+            <button class="btn primary" id="btnRestart">🔁 Restart</button>
+          </div>
+          <div class="kbd" style="margin-top:10px">
+            <span class="key">R</span>
+            <span class="key">Enter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
