@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>🧩 RunSpark (RS) — Endless Runner 🏃‍♂️💨 v1.0.0</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>RunSpark (RS) — Endless Runner</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="frame" id="frame">
+      <canvas id="game"></canvas>
+
+      <div class="hud" aria-hidden="true">
+        <div class="left">
+          <div class="chip">🏁 מרחק: <b id="dist">0</b></div>
+          <div class="chip">⭐ ניקוד: <b id="score">0</b></div>
+          <div class="chip">⚡ מהירות: <b id="speed">0</b></div>
+        </div>
+        <div class="right">
+          <div class="chip">❤️ חיים: <span class="hearts" id="lives">❤️❤️❤️</span></div>
+          <div class="chip">🏆 שיא: <b id="hi">0</b></div>
+          <div class="btnRow">
+            <div class="btn" id="btnPause" title="Pause (P)"><span class="dot warn"></span>⏸️ Pause</div>
+            <div class="btn" id="btnMute" title="Mute"><span class="dot"></span>🔊 Sound</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Overlay -->
+      <div class="overlay" id="startOverlay">
+        <div class="panel">
+          <div class="title">
+            <h1>🧩 RunSpark (RS) — Endless Runner 🏃‍♂️💨</h1>
+            <div class="tag">v1.0.0</div>
+          </div>
+          <div class="desc">
+            קפיצה בזמן — תזמון מדויק, מהירות עולה, מכשולים אקראיים, חלקיקים, רעידות מסך וצלילים סינתטיים 🎛️⚡<br/>
+            יעד: לצבור מרחק וניקוד, לשמור על החיים, ולשבור את השיא 🏆
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <h3>🎮 שליטה</h3>
+              <p>קפיצה: <b>Space</b> / קליק / טאץ׳.<br/>עצירה: <b>P</b> או ⏸️</p>
+            </div>
+            <div class="card">
+              <h3>🧪 בונוסים</h3>
+              <p>🛡️ Shield: פגיעה אחת בלי ירידת חיים.<br/>🕒 Slow: האטה זמנית.</p>
+            </div>
+            <div class="card">
+              <h3>💥 התנגשות</h3>
+              <p>פגיעה מורידה ❤️ + חסינות קצרה (הבהוב) + רעידת מסך.</p>
+            </div>
+            <div class="card">
+              <h3>📱 מובייל</h3>
+              <p>טאץ׳ על המסך לקפיצה. רספונסיבי + HDPI.</p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <div class="primary" id="btnStart">🚀 Start</div>
+            <div class="secondary" id="btnToggleDJ">✨ Double Jump: OFF</div>
+            <div class="secondary" id="btnResetHi">🧹 Reset High Score</div>
+            <div class="tapHint">👆 טיפ: קפיצה מאוחרת = יציבה יותר</div>
+          </div>
+
+          <div class="smallNote">
+            <span>🕒 25 בדצמבר 2025 | ד׳ טבת תשפ״ו | 15:54 (Asia/Jerusalem)</span>
+            <span>© Credits: Canvas, WebAudio API, localStorage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Over Overlay -->
+      <div class="overlay hidden" id="overOverlay">
+        <div class="panel">
+          <div class="title">
+            <h1>💀 Game Over</h1>
+            <div class="tag">RunSpark (RS)</div>
+          </div>
+          <div class="desc" id="overText">הניקוד שלך: 0</div>
+
+          <div class="grid">
+            <div class="card">
+              <h3>⭐ ניקוד סופי</h3>
+              <p><b id="finalScore">0</b></p>
+            </div>
+            <div class="card">
+              <h3>🏁 מרחק סופי</h3>
+              <p><b id="finalDist">0</b></p>
+            </div>
+            <div class="card">
+              <h3>🏆 שיא</h3>
+              <p><b id="finalHi">0</b></p>
+            </div>
+            <div class="card">
+              <h3>⚡ מהירות שיא</h3>
+              <p><b id="finalSpd">0</b></p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <div class="primary" id="btnRestart">🔁 Restart</div>
+            <div class="secondary" id="btnBackToMenu">🏠 Menu</div>
+          </div>
+
+          <div class="smallNote">
+            <span>💾 השיא נשמר אוטומטית</span>
+            <span>🎧 סאונד: WebAudio (בלי קבצים)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
