@@ -1,0 +1,35 @@
+.game-canvas {
+  width: 100%;
+  height: auto;
+  border: 1px solid #444;
+  background-color: #e7e7e7;
+}
+
+.ui-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.player-stats {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+}
+
+.battle-log {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .ui-container {
+    flex-direction: column;
+  }
+  .player-stats, .battle-log {
+    margin-bottom: 10px;
+  }
+}
