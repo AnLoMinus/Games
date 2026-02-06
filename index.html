@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Quest - RPG Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-ui">
+            <div id="player-stats">
+                <div class="stat">
+                    <span class="stat-label">HP:</span>
+                    <div class="stat-bar">
+                        <div id="hp-bar" class="stat-fill"></div>
+                    </div>
+                    <span id="hp-text">100/100</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">EXP:</span>
+                    <div class="stat-bar">
+                        <div id="exp-bar" class="stat-fill"></div>
+                    </div>
+                    <span id="exp-text">0/100</span>
+                </div>
+                <div id="player-info">
+                    <p id="level">Level: 1</p>
+                    <p id="gold">Gold: 0</p>
+                </div>
+            </div>
+            <canvas id="game-canvas"></canvas>
+            <div id="game-log">
+                <h3>Battle Log</h3>
+                <div id="log-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
+    <script src="combat.js"></script>
+    <script src="world.js"></script>
+</body>
+</html>
